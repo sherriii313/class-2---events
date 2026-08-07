@@ -1,28 +1,21 @@
-
-.box {
-  width: 100px;
-  height: 100px;
-  background: red;
-  position: absolute;
-  top: 100px;
-  left: 50px;
-  animation: moveBOX 2s  infinite;
-}   
-.box p{
-    color: rgb(72, 255, 0);
-    position: absolute;
-    top: 33px;
-    left: 20px;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes moveBOX{
-    0%{
-       transform: translateX(0); 
-    }
-    50%{
-        transform: translateX(1000PX);
-    }
-    100%{
-        transform:translateX(0);        
-    }
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  height: 100vh;
+  /* border: 10px solid blue; */
+
+  place-items: center;
+}
+
+.box {
+  border: 2px solid red;
+  padding: 30px;
+  background: lightgray;
+  font-size: 20px;
 }
