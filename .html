@@ -4,6 +4,60 @@
   <title>Responsive Navbar</title>
   <link rel="stylesheet" href="style.css">
 </head>
+  <style>
+    body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  color: white;
+  padding: 10px 20px;
+}
+
+/* LINKS */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* MENU ICON */
+.menu {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+    @media (max-width: 600px) {
+
+  .nav-links {
+    display: none; /* hide links */
+    flex-direction: column;
+    background: black;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu {
+    display: block; /* show menu icon */
+  }
+
+}
+  </style>
+    
 <body>
 
 <nav class="navbar">
