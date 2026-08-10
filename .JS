@@ -1,26 +1,18 @@
-function Plan(name, price) {
-  this.name = name;
-  this.price = price;
+// Constructor function
+function Student(name, age) {
+    this.name = name;
+    this.age = age;
 }
 
-// prototype method
-Plan.prototype.calcYear = function() {
-  return this.price * 12;
+// Prototype method (shared function)
+Student.prototype.introduce = function() {
+    console.log("Hi, mera naam " + this.name + " hai aur meri age " + this.age + " hai");
 };
 
-// prototype property
-Plan.prototype.type = "Hosting Plan";
+// Object banaya constructor se
+var s1 = new Student("Ali", 20);
+var s2 = new Student("Ahmed", 22);
 
-// objects
-var p1 = new Plan("Basic", 100);
-var p2 = new Plan("Premium", 200);
-
-// use
-console.log(p1.calcYear());
-console.log(p2.calcYear);
-
-console.log(p1.type);
-console.log(p2.type);
-
-// proof same function
-console.log(p1.calcYear === p2.calcYear);
+// Method call
+s1.introduce();
+s2.introduce();
