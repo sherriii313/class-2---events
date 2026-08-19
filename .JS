@@ -13,64 +13,21 @@ console.log("Power:", a ** b);
 
 console.log("===== ASSIGNMENT OPERATORS =====");
 
-let x = 10;
+let number = 10;
 
-x += 5;
-console.log("x += 5:", x);
+console.log("Starting:", number);
 
-x -= 3;
-console.log("x -= 3:", x);
+number += 5;
+console.log("After += 5:", number);
 
-x *= 2;
-console.log("x *= 2:", x);
+number -= 3;
+console.log("After -= 3:", number);
 
-x /= 4;
-console.log("x /= 4:", x);
+number *= 2;
+console.log("After *= 2:", number);
 
-x %= 3;
-console.log("x %= 3:", x);
+number /= 4;
+console.log("After /= 4:", number);
 
-
-console.log("===== COMPARISON OPERATORS =====");
-
-let age = 12;
-
-console.log("age > 10:", age > 10);
-console.log("age < 10:", age < 10);
-console.log("age >= 12:", age >= 12);
-console.log("age <= 12:", age <= 12);
-
-console.log("age == 12:", age == 12);
-console.log("age != 15:", age != 15);
-
-console.log("age === 12:", age === 12);
-console.log("age !== 15:", age !== 15);
-
-
-console.log("===== LOGICAL OPERATORS =====");
-
-let studentAge = 12;
-let marks = 80;
-
-console.log("AND:", studentAge >= 10 && marks >= 50);
-console.log("OR:", studentAge >= 18 || marks >= 50);
-console.log("NOT:", !(studentAge >= 18));
-
-
-console.log("===== INCREMENT / DECREMENT =====");
-
-let number = 5;
-
-number++;
-console.log("After ++:", number);
-
-number--;
-console.log("After --:", number);
-
-
-console.log("===== STRING OPERATOR =====");
-
-let firstName = "Muhammad";
-let lastName = "Shayan";
-
-console.log(firstName + " " + lastName);
+number %= 3;
+console.log("After %= 3:", number);
