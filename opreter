@@ -1,0 +1,10 @@
+Assignment operators use karke marks ko:
+
++10
+-5
+*2
+/5
+
+karo aur har step par console.log() se answer check karo.
+
+let marks = 50;
